@@ -1,0 +1,885 @@
+@media only screen and (max-width:1600px){
+    .box_bottom {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .box_title {
+        font-size: 16px;
+    }
+    .serviceDetail {
+        padding: 20px 12px;
+    }
+    .profile_sec .scroll {
+        height: 520px;
+    }
+    .booking-images img {
+        width: 130px;
+        height: 130px;
+    }
+    .sec-image {
+        left: 68%;
+    }
+    .center2_img {
+        left: 78%;
+    }
+    .first-image {
+        top: 81%;
+        left: 78%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .days_tabSect .nav-tabs {
+        max-width: 420px;
+    }
+    .myBooking_sect1 .days_tabSect .nav-tabs {
+        width: 340px !important;
+        max-width: 100%;
+    }
+    .myBooking_sect1 .days_tabSect .nav-tabs .nav-link {
+        width: 170px;
+    }
+    .filterSect .cta {
+        width: 150px;
+        font-size: 16px;
+    }
+    .selectDate input {
+        width: 110px;
+    }
+    .earnigGraph {
+        height: 100%;
+    }
+    .name {
+        font-size: 18px;
+    }
+    .profile_img {
+        width: 60px;
+        height: 60px;
+    }
+    .loginForm {
+        width: calc(100% - 275px);
+    }
+    .commentLeft img {
+        width: 60px;
+        height: 60px;
+    }
+    .commentLeft .title {
+        font-size: 20px;
+    }
+    .commentLeft {
+        flex-direction: column;
+    }
+    .reviews_sect1 .bgWhite {
+        padding: 20px 12px;
+    }
+    .serviceDetail .cta {
+        width: 100%;
+    }
+    .box_bottom .cta2 {
+        height: 50px;
+    }
+    .mover_schedule img {
+        width: 45px;
+        height: 45px;
+    }
+    .mover_schedule {
+        gap: 4px;
+    }
+    .request_box .title2 {
+        font-size: 16px;
+    }
+    .requests-sec .box_bottom {
+        margin: 0 4px;
+    }
+    .requests-sec .text {
+        font-size: 15px;
+    }
+    .requests-sec .box_bottom {
+        justify-content: space-between;
+    }
+    .requests-sec {
+        padding: 20px 6px;
+    }
+}
+
+
+@media screen and (max-width: 1366px) {
+    .earnigGraph .d_flexSpacebetween {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 20px 0;
+    }
+    .filterSect .cta {
+        height: 45px;
+        width: 145px;
+        font-size: 16px;
+    }
+    .settingTabs .nav .nav-link {
+        height: 70px;
+        font-size: 16px;
+    }
+    .loginForm {
+        width: calc(100% - 200px);
+    }
+    .star {
+        font-size: 24px;
+    }
+    .myProfile_photo {
+        top: -40px;
+    }
+    .reviewBox h4 {
+        font-size: 32px;
+    }
+    .service_description strong {
+        font-size: 16px;
+    }
+    .name {
+        font-size: 16px;
+    }  
+    .para {
+        font-size: 16px
+    }  
+    .booking-images img {
+        width: 115px;
+        height: 115px;
+    }
+    .box_bottom {
+        gap: 8px;
+    }
+    .requests-sec .mover_schedule {
+        flex-direction: column;
+    }
+    .sec-image {
+        left: 70%;
+    }
+    .center2_img {
+        left: 83%;
+    }
+    .first-image {
+        left: 85%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .headerSection {
+        width: calc(100% - 250px);
+    }
+    .aside {
+        width: 250px;
+    }
+    .content-section {
+        width: calc(100% - 250px);
+        padding: 50px 30px 50px 30px;
+    }
+    .para {
+        font-size: 16px;
+    }
+    .reviewTitle {
+        font-size: 20px;
+    }
+    .booking-images img {
+        width: 115px;
+        height: 115px;
+    }
+    .profile_info .d_flexCenterGap {
+        gap: 8px;
+    }
+    .profile_img {
+        width: 55px;
+        height: 55px;
+    }
+    .serviceDetail {
+        padding: 28px 8px;
+    }
+    .serviceDetail .cta {
+        height: 50px;
+    }
+    .serviceDetail .cta {
+        height: 45px;
+        font-size: 16px;
+    }
+    .reason_sec .para {
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .days_tabSect .nav-tabs {
+        max-width: fit-content;
+    }
+    .days_tabSect .nav-tabs .nav-link{
+        width: 100px;
+    }
+    .cta {
+        width: 200px;
+        height: 50px;
+    }
+    .content-section {
+        width: calc(100% - 250px);
+    }
+    .setting_sect .bgWhite {
+        padding: 20px 10px;
+    }
+    .box_bottom {
+        gap: 5px;
+    }
+    .requests-sec .text {
+        font-size: 14px;
+    }
+    .serviceDetail {
+        padding: 28px 18px;
+    }
+    .sec-image {
+        left: 67%;
+    }
+    .center2_img {
+        left: 76%;
+    }
+    .first-image {
+        left: 76%;
+    }
+}
+@media screen and (max-width: 1140px){
+    .loginForm {
+        width: calc(100% - 130px);
+    }
+    .loginField input {
+        font-size: 16px;
+    }
+    .profileDetail span img {
+        width: 110px;
+        height: 110px;
+    }
+    .service_description li {
+        font-size: 16px;
+    }
+    .service_description li {
+        padding: 10px 0;
+    }
+    .para {
+        font-size: 16px;
+    }
+    .serviceRequest_sect1 .cta {
+        width: 300px;
+    }
+    .commentLeft .title {
+        font-size: 18px;
+    }
+    .commentLeft img {
+        width: 55px;
+        height: 55px;
+    }
+    .reviewBox h4 {
+        font-size: 28px;
+        gap: 14px;
+    }
+    .chat-img img {
+        width: 45px;
+        height: 45px;
+    }
+    .filterSect {
+        gap: 4px;
+    }
+    .filterSect .cta {
+        width: 100px;
+    }
+    .selectDate input {
+        width: 100px;
+    }
+    .movers_sect1 .filterSect .cta {
+        width: 145px;
+    }
+    .info_box {
+        padding: 10px;
+    }
+    .booking_details {
+        padding: 10px 8px;
+    }
+    .box_bottom {
+        gap: 7px;
+    }
+    .requests-sec .box_top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+    .requests-sec {
+        padding: 20px 10px;
+    }
+    .requests-sec .mover_schedule {
+        flex-direction: row;
+    }
+    .title {
+        font-size: 22px;
+    }
+}
+@media (min-width: 1025px) {
+    .toggle-chat {
+        display: none;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .menuSect{
+        display: block;
+    }
+    .headerSection {
+        width: calc(100% - 100px);
+    }
+    .aside {
+        width: 100px;
+    }
+    .content-section {
+        width: calc(100% - 100px);
+        padding: 50px 30px 50px 30px;
+
+    }
+    .aside .all_navLinks li a .icons{
+        display: block;
+    }
+    .aside .all_navLinks li a span{
+        display: none;
+    }
+    .aside .all_navLinks li a {
+        padding-left: 15px;
+    }
+    .logoSect a img{
+        max-width: 80px;
+    }
+    .customerProfile {
+        width: 170px;
+    }
+    .setting_wrapper .d_flexSpacebetween {
+        flex-direction: column;
+    }
+    .settingTabs .nav .nav-link {
+        height: 65px;
+        font-size: 16px;
+    }
+    .setting_wrapper {
+        padding: 40px 10px 50px;
+    }
+    .aside.active .logoSect a img {
+        max-width: 170px;
+    }
+    .aside.active {
+        z-index: 1;
+        left: 0;
+    }
+    .content-section.active {
+        width: 100%;
+    }
+    .booking-images img {
+        width: 135px;
+        height: 135px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .selectDate input {
+        width: 110px;
+    }
+    .requests-sec .box_top {
+        flex-direction: row;
+    }
+    .cta {
+        width: 250px;
+    }
+    .customerProfile {
+        width: 150px;
+    }
+    .myProfile_detail li label {
+        font-size: 16px;
+    }
+    .days_tabSect {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .chat_comming {
+        position: fixed;
+        top: 186px;
+        right: -420px;
+        width: 420px;
+        height: 100%;
+        background-color: #ffffff;
+        transition: right 0.3s ease-out;
+        overflow-y: auto;
+    }
+    .toggle-chat {
+        display: block;
+    }
+    .loginForm {
+        width: calc(100% - 100px);
+    }
+    .leftCol img {
+        max-width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 910px){
+    .aside.active {
+        width: 250px;
+    }
+    .headerSection.active {
+        width: calc(100% - 250px);
+    }
+    .filterSect .cta {
+        width: 115px;
+        height: 45px;
+    }
+    .aside.active .logoSect a img {
+        max-width: 150px;
+    }
+       
+    .content-section {
+        padding: 30px 20px 30px 20px;
+    }
+    .comments_sectionList li {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .commentLeft {
+        flex-direction: row;
+        justify-content: left;
+        gap: 8px;
+    }
+    .selectDate input {
+        width: 100px;
+    }
+    .myProfile_sect1 .mt-5 {
+        margin-top: 0rem!important;
+    }
+    .loginBtn .cta {
+        width: 100% !important;
+    }
+    .loginForm {
+        width: calc(100% - 30px);
+    }
+    .edit_sec .cta {
+        width: 100%;
+        max-width: 400px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .prevBtn img {
+        max-width: 32px;
+    }
+    .movers_sect1 .searchField {
+        max-width: 200px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .text img {
+        max-width: 18px;
+    }
+}
+@media screen and (max-width: 767px) {
+ 
+    .filterSect{
+        flex-wrap: wrap;
+    }
+    .myProfile_sect1 .cta {
+        width: 150px;
+        font-size: 15px;
+    }
+    .myProfile_photo {
+        top: -40px;
+    }
+    .headerSection {
+        width: calc(100% - 75px);
+    }
+    .customerProfile span img {
+        width: 45px;
+        height: 45px
+    }
+    .commentLeft img {
+        width: 45px;
+        height: 45px;
+    }
+    .filterSect {
+        gap: 12px;
+    }
+    .movers_sect1 .searchField {
+        max-width: 130px;
+        height: 45px;
+    }
+    .menuSect {
+        width: 40px;
+    }
+    .searchField {
+        height: 45px;
+        max-width: 180px;
+    }
+    .headerSection.active {
+        padding: 20px 10px;
+    }
+    .initial-row {
+        flex-direction: column;
+    }
+    .leftCol {
+        width: 100%;
+        height: 20vh !important;
+    }
+    .leftCol img {
+        max-width: 175px;
+    }
+    .rightCol {
+        width: 100%;
+        height: 80vh;
+    }
+    .loginForm {
+        width: calc(100% - 200px);
+    }
+    .modal .searchField {
+        max-width: 100%;
+        height: 55px;
+    }
+    .FAQs .accordion-item .accordion-button {
+        font-weight: 600;
+    }
+    .toggle-chat {
+        top: 120px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .close-chat {
+        top: 120px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .chat_comming {
+        top: 180px;
+    }
+    .earnigGraph .filterSect .cta {
+        width: 130px;
+    }
+    .movers_sect1 .filterSect .cta {
+        width: 115px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .msg_icon img {
+        max-width: 36px;
+    }
+    .booking-images img {
+        width: 110px;
+        height: 110px;
+    }
+    .serviceDetail .cta2 {
+        height: 40px;
+        font-size: 14px !important;
+        font-weight: 500;
+    }
+    .sec-image {
+        left: 70%;
+    }
+    .center2_img {
+        left: 82%;
+    }
+    .first-image {
+        left: 82%;
+    }
+}
+@media screen and (max-width: 575px){
+    .headerSection {
+        padding: 10px;
+    }
+    .search_userSect {
+        width: 100px;
+        gap: 0px;
+    }
+    .aside {
+        width: 100px;
+        left: -150px;
+        z-index: 1;
+    }
+    .aside.active {
+        width: 220px;
+        left: 0px;
+    }
+    .aside .all_navLinks li a {
+        font-size: 14px;
+        height: 45px;
+        gap: 8px;
+    }
+    .aside.active .all_navLinks li a .icons{
+        display: block;
+    }
+    .content-section.active,
+    .content-section {
+        width: 100%;
+        border-radius: 0;
+    }
+    .headerSection.active {
+        width: calc(100% - 220px);
+    }
+    .headerSection {
+        width: 100%;
+    }
+    .logoSect a img,
+    .aside.active .logoSect a img {
+        max-width: 120px;
+    }
+    .menuSect {
+        width: 70px;
+    }
+    .loginForm {
+        width: calc(100% - 50px);
+    }
+    .loginField {
+        height: 50px;
+    }
+    .customerProfile{
+        width: 150px;
+    }
+    .serviceRequest_sect1 .cta {
+        width: 200px;
+        font-size: 14px;
+    }
+    .myProfile_sect1 .bgWhite {
+        padding: 0px 20px 10px 10px;
+    }
+    .earnigGraph .filterSect .cta {
+        width: 100px;
+    }
+    .aside.active {
+        width: 175px;
+        padding: 10px 8px 30px;
+    }
+    .icons img {
+        max-width: 26px;
+    }
+    .headerSection.active {
+        width: calc(100% - 175px);
+    }    
+    .aside .all_navLinks li a {
+        gap: 0px;
+        font-weight: 500;
+    }
+    .name {
+        font-size: 15px !important;
+    }
+    .detail_box p {
+        font-size: 14px;
+    }
+    .edit_sec .cta {
+        max-width: 225px;
+        height: 45px;
+    }
+    .edit_sec .bgWhite {
+        padding: 20px 0px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .prevBtn img {
+        max-width: 26px;
+    }
+    .TermsConditions span img {
+        max-width: 22px;
+    }
+    .filterSect .cta {
+        width: 110px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .toggle-chat {
+        top: 100px;
+    }
+    .close-chat {
+        top: 100px;
+    }
+    .chat_comming {
+        top: 150px;
+    }
+    .chat_comming.visible {
+        width: 380px;
+    }
+    .myBooking_sect1 .days_tabSect .nav-tabs {
+        width: 100%;
+    }
+    .bgWhite {
+        padding: 20px 6px;
+    }
+    .para {
+        font-size: 15px;
+    }
+    .profile_img {
+        width: 50px;
+        height: 50px;
+    }
+    .booking-images img {
+        width: 100px;
+        height: 100px;
+    }
+    .serviceDetail .cta {
+        height: 45px;
+    }
+    .box_title {
+        font-size: 15px;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .earnigGraph {
+        padding: 18px;
+    }
+    .requests-sec .mover_schedule {
+        flex-direction: column;
+    }
+    .requests-sec .box_top {
+        align-items: center;
+    }
+    .setting_title img {
+        max-width: 20px;
+    }
+    .menu_wrapper {
+        width: 390px;
+    }
+    .closeBtn {
+        width: 45px;
+        height: 45px;
+        top: -55px;
+    }
+    .serviceDetail .table .name {
+        font-size: 16px !important;
+    }
+    .service_description li small {
+        font-size: 15px;
+    }
+    .serviceDetail .table .name {
+        width: 285px;
+    }
+    .profileDetail span img {
+        width: 95px;
+        height: 95px;
+    }
+    .profile_box {
+        height: 550px;
+    }
+}
+@media screen and (max-width: 425px){
+    .para {
+        font-size: 14px;
+    }
+    .FAQs .accordion-item .accordion-button {
+        font-size: 14px;
+    }
+    .View_All {
+        color: #003628;
+        font-size: 14px;
+    }
+    .title2 {
+        color: #003628;
+        font-size: 16px;
+    }
+    .movers_sect1 .searchField {
+        max-width: 95px;
+    }
+    .toggle-chat {
+        top: 100px;
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .toggle-chat::after {
+        width: 12px;
+        height: 12px;
+        top: -3px;
+    }
+    .days_tabSect .nav-tabs .nav-link {
+        width: 80px;
+    }
+    .myProfile_sect1 .cta {
+        width: 140px;
+        font-size: 14px;
+    }
+    .new-service-section .loginForm {
+        width: calc(100% - 50px);
+    }
+    .close-chat {
+        top: 100px;
+    }
+    .chat_comming {
+        top: 166px;
+    }
+    .chat_comming.visible {
+        width: 335px;
+        top: 150px;
+    }
+    .myBooking_sect1 .days_tabSect .nav-tabs .nav-link {
+        width: 140px;
+    }
+    .booking_details {
+        padding: 10px 0px;
+    }
+    .profile_img {
+        width: 40px;
+        height: 40px;
+    }
+    .name {
+        font-size: 14px !important;
+    }
+    .msg_icon img {
+        max-width: 30px;
+    }
+    .serviceDetail .cta {
+        height: 40px;
+        font-size: 16px;
+    }
+    .booking-images img {
+        width: 85px;
+        height: 85px;
+    }
+    .info_box {
+        padding: 8px;
+    }
+    .text img {
+        max-width: 16px;
+    }
+    .selectDate input {
+        width: 80px;
+    }
+    .request_box {
+        padding: 20px 5px;
+    }
+    .request_box .title2 {
+        font-size: 14px;
+    }
+    .menu_wrapper {
+        width: 350px;
+    }
+    .menu_wrapper.active {
+        top: 68px;
+        right: 4px;
+    }
+    .profileDetail span img {
+        width: 80px;
+        height: 80px;
+    }
+    .serviceDetail {
+        padding: 28px 10px;
+    }
+    .service_description strong {
+        font-size: 15px;
+    }
+    .service_description li small {
+        font-size: 13px;
+    }
+    .sec-image {
+        left: 72%;
+    }
+    .center2_img {
+        left: 86%;
+    }
+    .first-image {
+        left: 85%;
+    }
+}

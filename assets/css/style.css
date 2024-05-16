@@ -1,0 +1,1500 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Myeongjo&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+a,
+.btn-default,
+textarea {
+	margin: 0;
+	padding: 0;
+    list-style: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: #191919;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+body {
+	overflow-x: hidden;
+    font-family: 'Barlo', sans-serif;
+    background: #DFECE9 ;
+    background-size: cover;
+    background-position: top;
+}
+.container-fluid {
+    padding: 0 50px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.d_flexCenter{
+	display: flex;
+	align-items: center;
+}
+.d_flexStart{
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+}
+.d_flexStartBetween{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.d_flexCenterGap{
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.d_flexSpacebetween{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.d_flexSpacebetweenGap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+/*scroll bar css start*/
+::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px #DFECE9; 
+	border-radius: 10px;
+	background-color: #DFECE9; 
+}
+::-webkit-scrollbar{
+	width: 0px;
+    border-radius: 12px;
+	background-color: #DFECE9;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px #003628; 
+	background-color: #003628;
+} 
+/*======== HEADER CSS START HERE ========*/
+.headerSection.active {
+    width: calc(100% - 250px);
+}
+.aside.active {
+    width: 250px;
+}
+.all_navLinks li a.active {
+    background: #dfece9;
+    color: #003628;
+}
+.all_navLinks li a.active .active_icons{
+    display: flex;
+}
+.all_navLinks li a.active .default_icons{
+    display: none;
+}
+.all_navLinks li a:hover .default_icons {
+    display: none;
+}
+.all_navLinks li a:hover .active_icons{
+    display: flex;
+}         
+.active_icons {
+    display: none;
+}
+.content-section.active {
+    width: calc(100% - 250px);
+}
+.headerSection {
+    width: calc(100% - 320px);
+    margin: 0 0 0 auto;
+
+    padding: 20px 30px;
+    background: #003628;
+    transition: all 0.3s ease-in-out;
+}
+.menuSect {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100px;
+    display: none;
+}
+.search_userSect {
+    width: calc(100% - 300px);
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+}
+.title {
+    color: #003628;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+}
+.title2 {
+    color: #003628;
+    font-size: 20px;
+    font-weight: 700;
+}
+.searchField {
+    background: #fff !important;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+}
+.searchField input {
+    width: calc(100% - 60px);
+    height: 100%;
+    border-radius: 40px;
+    border: 0;
+    background: transparent !important;
+    font-size: 16px;
+    color: #6E6E6E;
+    outline: none;
+}
+.notificationSect {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    padding: 10px 20px 30px;
+    background: #003628;
+    transition: all 0.3s ease-in-out;
+}
+.logoSect a img {
+    max-width: 200px;
+    object-fit: cover;
+}
+.aside.active .logoSect a img{
+    max-width: 200px;
+}
+.aside.active .all_navLinks li a span {
+    display: block;
+}
+.logoSect {
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all_navLinks {
+    height: 60vh;
+    overflow-y: scroll;
+    padding-right: 5px;
+}
+.all_navLinks li{
+    margin-bottom: 5px;
+}
+.all_navLinks li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    padding-left: 25px;
+    width: 100%;
+    background: transparent;
+    border-radius: 30px 0px 0px 30px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    color: #F2F5F7;
+    font-weight: 600;
+}
+ .all_navLinks li a .icons {
+    width: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+.default_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all_navLinks li a:hover {
+    background: #DFECE9;
+    color: #003628;
+}
+.searchField img {
+    border-right: 1px solid #bdbdc5;
+    margin-right: 8px;
+    padding: 5px;
+}
+.menuSection {
+    position: relative;
+}
+.menu_wrapper {
+    position: absolute;
+    width: 450px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 2px #ccc;
+    padding: 20px 0px 0;
+    right: 0;
+    top: 20px;
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.menu_wrapper.active {
+    top: 60px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 11;
+}
+.menu_wrapper .form-switch {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.notification_wrapper .modal-body {
+    padding: 0px 16px 12px;
+}
+.userdesc {
+    width: 100%;
+}
+.modal-header-notificaions {
+    border-bottom: 2px solid #bbbb;
+    margin: 0 18px;
+}
+.notification_wrapper .time span {
+    font-size: 14px;
+}
+.menu_list li a img {
+    display: inline;
+}
+.menu_list li .form-switch {
+    padding: 0;
+}
+.closeBtn {
+    width: 55px;
+    height: 55px;
+    background: #EFAB00;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    right: 0;
+}
+/* .table-responsive {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+} */
+/* ================= Header Css End's Here ==================== */
+/* ============= Signin  Css Start Here =============== */
+.initial-row {
+    display: flex;
+    background: #fff;
+}
+.leftCol {
+    background: #0d4033 url('../images/banner.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightCol {
+    width: 50%;
+    height: 100vh;
+    background: #DFECE9;
+    position: relative;
+}
+.loginHeading {
+    text-align: center;
+    font-size: 26px;
+    color: #003628;
+    font-weight: 700;
+}
+.loginForm {
+    width: calc(100% - 350px);
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logindesc {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+.loginField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    height: 60px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px #ccc;
+}
+.loginField input {
+    background: transparent !important;
+    width: calc(100% - 10px);
+    outline: none;
+    font-size: 20px;
+    color: #9A9A9A;
+}
+.login_input_label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.loginBtn .cta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+/* =============  Signin Css Ends Here =============== */
+/* =============  Index Css Starts Here =============== */
+.request_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid #D8D8D8;
+    border-radius: 16px;
+    padding: 20px 10px;
+}
+.mover_schedule {
+    gap: 10px;
+}
+.box_top {
+    justify-content: space-between;
+    border-bottom: 2px dashed #ccc;
+}
+.request_box .title2 {
+    font-size: 18px;
+}
+.mover_schedule img {
+    width: 55px;
+    height: 55px;
+}
+.box_title {
+    font-size: 18px;
+    color: #003628;
+}
+.box_bottom {
+    justify-content: space-between;
+    margin: 0px 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.requests-sec .scroll {
+    height: 635px;
+}
+/* =============  Index Css Ends Here =============== */
+/************** Popup Css Start Here ********************/
+.btn-close {
+    width: 12px;
+    height: 12px;
+    background: url('../images/close.png') no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.modal-header {
+    border-bottom: none;
+    height: 30px;
+}
+.modal .searchField {
+    border: 1px solid #ccc;
+}
+.modal-content {
+    border-radius: 6px;
+    overflow: hidden;
+    border: 0;
+    text-align: center;
+    padding: 28px;
+}
+.modal .cta {
+    width: 100%;
+}
+.assigned_mover {
+    flex-direction: column;
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 12px;
+    padding: 22px;
+}
+.assigned {
+    padding: 8px;
+}
+.assigned_mover img {
+    max-width: 75px;
+}
+.assigned_mover  .cta {
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+#mover_Modal .modal-dialog {
+    max-width: 650px;
+}
+.image_sec {
+    margin: 26px 0;
+}
+.popup_btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.profile_info {
+    align-items: center;
+}
+.profile_img {
+    width: 80px;
+    height: 80px;
+}
+.img-sec {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.info_box {
+    margin-top: 6px;
+    background: #fff;
+    width: fit-content;
+    padding: 10px 20px ;
+    border-radius: 6px;
+}
+.form-check-input:checked {
+    background-color: #009975;
+    border-color: #009975;
+}
+.submit-box {
+    display: flex;
+    gap: 15px;
+}
+.avatar-upload {
+    position: relative;
+    max-width: 180px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    bottom: -7px;
+    left: 52px;
+    z-index: 1;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    left: 22px;
+    bottom: 60px;
+}
+.avatar-upload .avatar-edit input + label i {
+	font-size: 16px;
+	color: #fff;
+}
+.avatar-upload .avatar-preview {
+    width: 130px;
+    height: 130px;
+    margin: 35px auto 0px;
+    position: relative;
+    border-radius: 100%;
+    border: 2px solid #efa700;
+}
+.edit_mover_profile .avatar-upload .avatar-edit input + label img {
+    max-width: 18px;
+}
+.edit_mover_profile .avatar-upload .avatar-edit input + label {
+    background: #FF9800;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    align-items: center;
+    left: 60px;
+    bottom: 12px;
+}
+.edit_mover_profile .avatar-upload .avatar-preview {
+    border: 2px solid #0d4033;
+}
+.imagePreview {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/************** Popup Css End Here ********************/
+/* ============ Page Css Start Here =========== */
+.content-section {
+    background: #DFECE9;
+    width: calc(100% - 320px);
+    margin: 0px 0 0 auto;
+    min-height: 100vh;
+    border-radius: 30px 0px 0px 0px;
+    padding: 50px 30px 50px 50px;
+    transition: all 0.3s ease-in-out;
+}
+.bgWhite {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+.days_tabSect .nav-tabs {
+    background: #ECECEC;
+    border: 0;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.days_tabSect .nav-tabs .nav-link {
+    background: #ECECEC;
+    font-size: 15px;
+    color: #5F6165;
+    font-weight: 600;
+    width: 140px;
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    height: 55px;
+    transition: all 0.3s ease-in-out;
+}
+.days_tabSect .nav-tabs .nav-link.active {
+    background: #efab00;
+    color: #fff;
+}
+.canvasjs-chart-credit {
+    display: none;
+}
+.movers_sect1 .filterSect {
+    justify-content: flex-end;
+    width: 100%;
+}
+.movers_sect1 .searchField {
+    border-bottom: 1px solid #ccc;
+    max-width: 330px;
+    border-radius: 0;
+}
+.content-section .cta {
+    font-size: 18px;
+}
+.service_table .table thead {
+    color: #003628;
+    font-size: 16px;
+    font-weight: 600;
+}
+.td_date {
+    width: 160px;
+    display: flex;
+}
+.service_table .table tbody .View_All {
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+.customerProfile {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #003628;
+    font-size: 16px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.customerProfile span img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #003628;
+}
+.service_table .table tbody {
+    color: #5F6165;
+    font-size: 16px;
+    font-weight: 400;
+}
+.table>:not(caption)>*>*{
+    vertical-align: middle;
+}
+.View_All {
+    color: #003628;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration-line: underline;
+}
+.graph canvas{
+    width: 100% !important;
+    height: 370px !important;
+}
+tbody, td, tfoot, th, thead, tr{
+    height: 70px;
+}
+.profileDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profileDetail span img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #003628;
+}
+.profile_sec .star {
+    font-size: 22px;
+}
+.profile_sec .ratings {
+    gap: 4px;
+}
+.name {
+    color: #003628;
+    font-size: 20px;
+    font-weight: 700;
+}
+.service_description li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #D4D4D4;
+    font-size: 18px;
+    font-weight: 500;
+} 
+.service_description li strong {
+    color: #003628;
+}
+.service_description li small {
+    color: #003628;
+    font-size: 16px;
+    font-weight: 500;
+}
+.edit_function {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.cta {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFAB00;
+    /* box-shadow: 0px 0px 6px 0px #5c5c5c; */
+    border-radius: 6px;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.btnSect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+.serviceDetail {
+    background: #dfece9;
+    padding: 20px;
+    position: relative;
+    border-radius: 20px;
+}
+.profile_box {
+    height: 725px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.para {
+    font-size: 18px;
+    font-weight: 400;
+    color: #667080;
+}
+.serviceDetail .para{
+    padding: 0 10px;
+}
+.location_img_sec img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+.myBooking_sect1 .days_tabSect .nav-tabs .nav-link {
+    width: 200px;
+}
+.filterSect {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.selectDate input {
+    background: #ececec;
+    border: 0;
+    height: 50px;
+    border-radius: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #5F6165;
+    font-weight: 500;
+    outline: none;
+}
+.myBookingTable {
+    box-shadow: none;
+    padding: 0;
+}
+.my_service_description li {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.my_service_description li span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.service_description .add_account {
+    font-size: 18px;
+    gap: 12px;
+}
+.totalEarning_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+    height: 400px;
+}
+.earning {
+    color: #003628;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+.earnigGraph {
+    height: 400px;
+}
+.earnigGraph .filterSect .cta {
+    width: 180px;
+}
+.filterSect .cta {
+    width: 180px;
+}
+.earnigGraph canvas {
+    width: 100% !important;
+    height: 280px !important;
+}
+.canvasjs-chart-toolbar {
+    display: none;
+}
+.settingTabs .nav {
+    flex-direction: column;
+}
+.settingTabs .nav .nav-link {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #EFEFEF;
+    color: #424B5A;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    box-shadow: none;
+}
+.settingTabs .nav .nav-link.active {
+    background: #EFAB00;
+    color: #fff;
+}
+.setting_wrapper {
+    border-radius: 20px;
+    background: #dfece9;
+    padding: 40px 40px 50px;
+}
+.setting_wrapper canvas{
+    width: 100% !important;
+    height: 300px !important;
+}
+.payments {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 70px;
+    border-radius: 10px;
+    border: 1px solid #D8D8D8;
+    background: #FFF;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.05);
+}
+.cardIcon img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.payments input {
+    border: 0;
+    padding: 0;
+    outline: none;
+}
+.paymentCard_section {
+    padding: 20px 0 0;
+}
+.setting_filter .cta {
+    width: 150px;
+}
+.titleBorder {
+    position: relative;
+    border-bottom: 2px solid #fff;
+    max-width: fit-content;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+.FAQs .accordion-item {
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 10px;
+}
+.FAQs .accordion-item .accordion-button {
+    color: #003628;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    background: #fff;
+    border: 0 !important;
+    border-radius: 20px !important;
+    box-shadow: unset !important;
+    height: 80px;
+}
+.setting_title {
+    display: flex;
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('../images/remove.png');
+}
+.accordion-button::after{
+    background-image: url('../images/add.png');
+}
+.myProfile_sect1 .bgWhite {
+    padding: 0px 20px 30px 70px;
+    margin-top: 100px;
+}
+.myProfile_photo {
+    display: flex;
+    flex-direction: column;
+    max-width: 140px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -80px;
+    gap: 15px;
+}
+.myProfile_detail li {
+    border-bottom: 1px solid #D4D4D4;
+    padding: 15px 0px;
+}
+.myProfile_detail li label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #185C37;
+}
+.myProfile_detail {
+    padding: 0 20px;
+}
+.myProfile_sect1 .bgWhite .row .col-md-4 {
+    border-left: 1px solid #D4D4D4;
+    border-right: 1px solid #D4D4D4;
+}
+.myProfile_detail li .form-switch {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+.myProfile_detail li .form-switch .form-check-input {
+    background-color: #4cc583;
+    border-color: #4cc583;
+}
+.myProfile_detail li .form-switch .form-check-input:checked {
+    background-color: #003628;
+    border-color: #003628;
+}
+/*======== Chat Css Starts HERE ========*/
+.chat-section {
+    padding: 25px;
+}
+.form-group .input-box {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    outline: none;
+    height: 55px;
+    padding: 14px;
+    border-radius: 6px;
+    align-items: center;
+    background: #fff;
+}
+.form-group input {
+    margin: 8px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.chat {
+    display: flex;
+    gap: 12px;
+    border-bottom: 2px solid #BBBBBB;
+    padding: 10px 0px;
+    align-items: center;
+}
+.chat-img img {
+    border: 1px solid #003628;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+.userdesc .name {
+    font-size: 16px;
+}
+.userdesc .para {
+    font-size: 16px;
+}
+.chat .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #565656;
+}
+.chat-head-person {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.message-sent .para {
+    font-size: 16px;
+    background: #ddeae7;
+    height: auto;
+    width: 100%;
+    min-width: 100px;
+    max-width: 630px;
+    border-radius: 0px 8px 8px 8px;
+    padding: 10px 14px;
+}
+.message-recieve {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 45px 0px;
+    gap: 12px;
+}
+.message-recieve .para {
+    font-size: 16px;
+    background: #003628;
+    color: #fff;
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 8px 0px 8px 8px;
+    padding: 10px 14px;
+}
+.message-recieve .msg-title {
+    display: flex;
+    justify-content: end;
+}
+.msg-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+.message-recieve .msg-time {
+    position: absolute;
+    right: 6%;
+    bottom: -25px;
+}
+.inbox {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: #ddeae7;
+    border-radius: 10px;
+}
+.inbox .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #003628;
+}
+.message-sent {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin: 45px 0px;
+    gap: 12px;
+}
+.chat-body {
+    background: #fff;
+    padding: 10px 20px;
+    height: 460px;
+    overflow-y: scroll;
+    margin: 10px 0;
+}
+.message_box {
+    background: #ffffff;
+    padding: 20px 10px;
+    border-radius: 12px;
+    border: 1px solid #d7d7d7;
+}
+.chat_box {
+    background: #ddeae7;
+    padding: 20px 10px;
+    border-radius: 12px;
+}
+.time span {
+    color: #A9ABAD;
+    font-weight: 400;
+    font-size: 14px;
+}
+.scroll {
+    height: 500px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-top: 10px;
+}
+.chat-footer-sect {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: 0 auto;
+    background: #f3f6ff;
+    height: 80px;
+    border-radius: 12px;
+    padding: 0 18px;
+    border: 1px solid #e6e6e6;
+}
+.chat-footer-sect input {
+    width: calc(100% - 60px);
+    height: 100%;
+    border: 0;
+    background: transparent !important;
+    outline: none;
+}
+.chat_option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+.chatOption_btn.active {
+    font-weight: 700;
+    border-bottom: 1px solid #003628;
+    color: #003628;
+}
+.chatOption_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    font-size: 18px;
+    color: #a0b3af;
+    font-weight: 700;
+    padding: 10px;
+}
+.chat-img:before {
+    content: '';
+    background-color: #00AE85;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 72%;
+    border-radius: 50%;
+    left: 70%;
+    border: 2px solid #fff;
+}
+.chat-img {
+    position: relative;
+}
+.message_notification {
+    background: #F6BD56;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+}
+.chat-head-person img {
+    max-width: 45px;
+}
+.chat-head-person .chat-img:before {
+    top: 16%;
+    left: -18px;
+}
+.chat-head-person .green_text {
+    margin-left: 20px;
+}
+.msg-sent-img img {
+    max-width: 40px;
+}
+.last {
+    border: none !important;
+}
+/*======== Chat Css Ends HERE ========*/
+/*======== Reviews Css Starts HERE ========*/
+.map_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.star.selected {
+    color: #FFB800 !important;
+}
+.star {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 0px;
+    color: #8b8a89;
+}
+.ratings {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.reviewBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.reviewTitle {
+    font-size: 22px;
+    color: #003628;
+    font-weight: 500;
+}
+.reviewBox h4 {
+    font-size: 45px;
+    color: #003628;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.percent_graph {
+    font-size: 10px;
+    background: #dfece9;
+    padding: 6px 10px;
+    color: #000;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+.rating_category li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+    color: #667080;
+    gap: 20px;
+}
+.bg_line {
+    background: #21D8A9;
+    height: 4px;
+    margin: 0 auto 0 0;
+}
+.bg_line4 {
+    width: calc(100% - 140px);
+}
+.bg_line3 {
+    width: calc(100% - 180px);
+}
+.bg_line2 {
+    width: calc(100% - 230px);
+}
+.bg_line1 {
+    width: calc(100% - 270px);
+}
+.bg_line5 {
+    width: calc(100% - 100px);
+}
+.comments_sectionList li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.commentLeft {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.commentRight {
+    padding: 0 10px 0;
+    border-left: 1px solid #ccc;
+}
+.comments_section {
+    padding: 20px 0 30px;
+    border-top: 1px solid #ccc;
+}
+.commentLeft img {
+    border-radius: 50%;
+    border: 1px solid #003628;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+.detail_box {
+    width: 100%;
+    background: #ededed;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+.edit_sec .cta {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+/*======== Reviews Css Ends HERE ========*/
+/* -------------------------------- */
+/* Default styles for the chat box */
+
+
+/* Show the chat box when the 'visible' class is applied */
+.chat_comming.visible {
+    position: absolute;
+    top: 5%;
+    right: 5% !important;
+    z-index: 1;
+    box-shadow: 0px 0px 4px #000;
+}
+.chat-section{
+    position: relative;
+}
+/* Styles for the toggle button */
+.toggle-chat {
+    position: fixed;
+    right: 20px;
+    background-color: #003628;
+    color: #fff;
+    cursor: pointer;
+    top: 130px;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    display: none;
+}
+.chat-toggle {
+    position: relative;
+}
+.toggle-chat::after {
+    position: absolute;
+    content: '';
+    background: red;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    top: -6px;
+    right: 0;
+}
+.close-chat {
+    position: fixed;
+    right: 20px;
+    background-color: #003628;
+    color: #fff;
+    cursor: pointer;
+    top: 130px;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    display: none;
+}
+.chat_comming.visible .close-chat {
+display: block;
+}
+.chat_comming.visible .toggle-chat {
+display: none;
+}
+/************** Booking Details Css Starts Here ****************/
+.booking-images {
+    width: 100%;
+    justify-content: center;
+}
+.desc {
+    color: #003628;
+}
+.reason_sec {
+    background: #003628;
+    border-radius: 12px;
+    padding: 6px;
+}
+.reason_sec .para {
+    color: #fff;
+    font-size: 14px;
+}
+.items .info_box {
+    border: 2px solid #b0b0b0;
+}
+.text {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.cta2 {
+    background: #003628;
+    box-shadow: none;
+}
+.profile_sec .scroll {
+    height: 715px;
+}
+.profile_sec .scroll::-webkit-scrollbar{
+	width: 0px;
+}
+.serviceDetail .table .name {
+    width: 335px;
+}
+.serviceDetail .table .green_text {
+    width: 200px;
+}
+.responsive-map-container iframe {
+    filter: grayscale(100%); /* Apply gray-scale effect */
+    width: 100%;
+    height: 490px;
+  }
+.responsive-map-container.userhome-map {
+    border: 1px solid #003628;
+    padding: 0px 1px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.responsive-map-container {
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 36%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.first-image {
+    top: 80%;
+    left: 72%;
+}
+.firstt-image {
+    top: 23%;
+    left: 58%;
+}
+.sec-image {
+    top: 52%;
+    left: 65%;
+}
+.center2_img {
+    top: 68%;
+    left: 72%;
+}
+
+/************** Booking Details Css Ends Here ****************/
+/************** User Css Starts Here ****************/
+.user_btn .cta {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.green_text {
+    color: #003628;
+}
+.table-responsive {
+    overflow-x: scroll;
+    /* width:600px; */
+}
+.table-responsive::-webkit-scrollbar{
+    height: 4px !important;
+}
+/************** User Css Ends Here ****************/
+
